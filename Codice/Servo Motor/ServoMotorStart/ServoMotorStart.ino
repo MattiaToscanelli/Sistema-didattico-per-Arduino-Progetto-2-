@@ -1,6 +1,6 @@
 #include "ServoMotor.h"
 
-//Inizializza un oggetto di tipo Potenziometro di nome potenziometro.
+//Inizializza un oggetto di tipo ServoMotor di nome servoMotor.
 ServoMotor* servoMotor;
 
 int velocita = 20;
