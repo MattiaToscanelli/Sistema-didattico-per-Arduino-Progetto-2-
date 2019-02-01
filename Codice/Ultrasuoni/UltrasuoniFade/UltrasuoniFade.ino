@@ -17,7 +17,7 @@ void setup() {
 }
 void loop() {
   //Viene letta la distanza distanza dal sensore ultrasioni.
-  int distance = ultrasuoni->distanza();
+  int distance = ultrasuoni->distanzaLetta();
   //Se la distanza è superiore a 10 cm entra nell'if.
   if(distance > 10){
     //Accende il led con l'intesità direttamente proporzionale al valore letto dal sensore ultrasuoni.

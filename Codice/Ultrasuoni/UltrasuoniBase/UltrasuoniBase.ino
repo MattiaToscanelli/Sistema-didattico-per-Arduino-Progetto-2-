@@ -16,8 +16,8 @@ void setup() {
   ultrasuoni = new Ultrasuoni(echoPin, trigPin);
 }
 void loop() {
-  //Viene letta la distanza distanza dal sensore ultrasioni.
-  int distance = ultrasuoni->distanza();
+  //Viene letta la distanza dal sensore ultrasioni.
+  int distance = ultrasuoni->distanzaLetta();
   //Se la distanza è superiore di 50 cm entra nell'if.
   if(distance > 50){
     //Accende il led se la distanza letta dal sensore ultrasuoni è superiore di 50 cm.

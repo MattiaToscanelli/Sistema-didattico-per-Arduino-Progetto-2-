@@ -19,11 +19,11 @@ void setup() {
 }
 void loop() {
   //Fa una pausa in millisecondi corrispondente alla distanza in centimetri moltiplicata per due.
-  delay(ultrasuoni->distanza()*2);
+  delay(ultrasuoni->distanzaLetta()*2);
   //Accende il led.
   digitalWrite(led, HIGH);
   //Fa una pausa in millisecondi corrispondente alla distanza in centimetri moltiplicata per due.
-  delay(ultrasuoni->distanza()*2);
+  delay(ultrasuoni->distanzaLetta()*2);
   //Spegne il led.
   digitalWrite(led, LOW);
 }
