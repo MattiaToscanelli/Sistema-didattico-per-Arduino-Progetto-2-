@@ -8,12 +8,13 @@ class ServoMotore {
 		/**
 		* Metodo costruttore che setta il pin di scrittura del valore
 		* da inviare al ServoMotore.
-		* @param Il pin di scrittura dove viene collegato il ServoMotore.
+		* @param pin Il pin di scrittura in cui viene collegato il ServoMotore.
+		* @param velocita La velocità del ServoMotore.
 		*/
 		ServoMotore(int pin, int velocita);
 		/**
 		* Metodo che setta la velocità del ServoMotore. La velocità va da -100 a 100.
-		* @param La velocità del ServoMotore.
+		* @param velocita La velocità del ServoMotore.
 		*/
 		void settaVelocita(int velocita);
 		/**
@@ -43,7 +44,7 @@ class ServoMotore {
 		*/
 		int _velocita;
 		/*
-		* La posizione del sServoMotore.
+		* La posizione del ServoMotore.
 		*/
 		int _posizione;
 };

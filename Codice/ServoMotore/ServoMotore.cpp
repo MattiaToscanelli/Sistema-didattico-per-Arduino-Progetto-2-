@@ -4,19 +4,20 @@
 /**
 * Metodo costruttore che setta il pin di scrittura del valore
 * da inviare al ServoMotore.
-* @param Il pin di scrittura dove viene collegato il ServoMotore.
+* @param pin Il pin di scrittura in cui viene collegato il ServoMotore.
+* @param velocita La velocità del ServoMotore.
 */
 ServoMotore::ServoMotore(int pin, int velocita)
 {
 	_pin = pin;
-	_velocita = velocita;
+	settaVelocita(velocita);
 	_posizione = POS_MINIMA;
 	pinMode(pin, OUTPUT);
 }
 
 /**
-* Metodo che ritorna la posizione del ServoMotore. Va dalla posizione 0 alla posizione 180;
-* @return La posizione del ServoMotore.
+* Metodo che setta la velocità del ServoMotore. La velocità va da -100 a 100.
+* @param velocita La velocità del ServoMotore.
 */
 void ServoMotore::settaVelocita(int velocita)
 {

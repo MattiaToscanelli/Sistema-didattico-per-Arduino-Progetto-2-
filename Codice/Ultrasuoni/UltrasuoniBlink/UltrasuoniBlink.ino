@@ -12,7 +12,7 @@ int led = 0;
 
 void setup() {
   //Istanzia la variabile ultrasuoni assegnando il pin di echo come primo valore nelle parentesi e il pin
-  //di trig come secibdi valore delle parentesi
+  //di trig come secondo valore delle parentesi
   ultrasuoni = new Ultrasuoni(echoPin, trigPin);
   //Viene specificato che il pin del bottone è di tipo scrittura (output).
   pinMode(led, OUTPUT);

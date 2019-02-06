@@ -12,13 +12,13 @@ void setup() {
 }
 
 void loop() {
-  //Verifica se il servo motore si trova a una posizione uguale o supriore di 180 gradi, se si entra nell'if.
+  //Verifica se il servo motore si trova a una posizione uguale o superiore di 180 gradi, se si entra nell'if.
   if(servoMotore->ottieniPosizione() >= 180){
-     //Setta la velocità al servoMotore al negativo (cosi torna indietro).
+     //Setta la velocità negativo al ServoMotore (cosi torna indietro).
     servoMotore->settaVelocita(-velocita);
   //Verifica se il servo motore si trova a una posizione uguale o inferiore di 0 gradi, se si entra nell'else if.
   }else if(servoMotore->ottieniPosizione() <= 0){
-    //Setta la velocità al servoMotore in positivo (cosi va avanti).
+    //Setta la velocità al servoMotore in positivo (così va avanti).
     servoMotore->settaVelocita(velocita);
   }
   //Avvia il servo motore.

@@ -6,7 +6,7 @@ Potenziometro* potenziometro;
 int led = 0;
 
 void setup() {
-  //Istanzia la variabile potenziometro assegnado la porta analogica all'interno delle parentesi. (in questo caso 2)
+  //Istanzia la variabile potenziometro assegnando la porta analogica all'interno delle parentesi. (in questo caso 2)
   potenziometro = new Potenziometro(2);
   pinMode(led, OUTPUT);
 }
@@ -16,10 +16,10 @@ void loop() {
   int valore = potenziometro->valoreLetto();
   //Se il valore è minore di 128 entra nell if se no nell'else.
   if(valore < 128){
-    //Scrive nel LED il valore moltipicato per 2. (Così a meta corsa il LED è acceso al massimo)
+    //Scrive nel LED il valore moltiplicato per 2. (Così a meta corsa il LED è acceso al massimo)
     analogWrite(led,valore*2);
   }else{
-    //Scrive nel LED il valore maassimo moltiplicato per 2 meno il valore letto moltiplicato per 2 (Così a meta corsa il LED incomincia a spegnersi)
+    //Scrive nel LED il valore massimo moltiplicato per 2 meno il valore letto moltiplicato per 2 (Così a meta corsa il LED incomincia a spegnersi)
     analogWrite(led,(255*2)-(valore*2));
   }
 }

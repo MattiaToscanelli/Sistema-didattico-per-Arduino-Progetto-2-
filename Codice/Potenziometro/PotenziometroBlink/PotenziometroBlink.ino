@@ -6,13 +6,13 @@ Potenziometro* potenziometro;
 int led = 0;
 
 void setup() {
-  //Istanzia la variabile potenziometro assegnado la porta analogica all'interno delle parentesi. (in questo caso 2)
+  //Istanzia la variabile potenziometro assegnando la porta analogica all'interno delle parentesi. (in questo caso 2)
   potenziometro = new Potenziometro(2);
   pinMode(led, OUTPUT);
 }
 
 void loop() {
-  //Fa una pausa in milliseconsi del valre letto del potenziometro moltiplicata per due (0-255 * 2)
+  //Fa una pausa in milliseconsi del valore letto del potenziometro moltiplicata per due (0-255 * 2)
   delay(potenziometro->valoreLetto()*2);
   digitalWrite(led, HIGH);
   //Fa una pausa in milliseconsi del valre letto del potenziometro moltiplicata per due (0-255 * 2)

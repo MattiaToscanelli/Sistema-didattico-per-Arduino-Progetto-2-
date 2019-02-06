@@ -3,10 +3,10 @@
 //Inizializza un oggetto di tipo Potenziometro di nome potenziometro.
 ServoMotore* servoMotore;
 
-//Viene inizializzata la velocita che in seguito verrà settata al Servo Motore.
+//Viene inizializzata la velocit che in seguito verrà settata al Servo Motore.
 int velocita = 100;
 
-//Viene iniziazzata la variabile che verificherà che il bottone è stato premuto o no.
+//Viene inizializzata la variabile che verificherà se il bottone è stato premuto o no.
 int val = 0;
 
 //Viene inizalizzata la variabile che specifica il pin del bottone.
@@ -14,7 +14,7 @@ int bottone = 4;
 
 void setup() {
   //Istanzia la variabile servoMotor assegnando il pin nelle parentesi (in questo caso il pin 3) e
-  //dopo la virgola la volecita iniziale.
+  //dopo la virgola la velocita iniziale.
   servoMotore = new ServoMotore(3, velocita);
   //Viene specificato che il pin del bottone è di tipo lettura (input).
   pinMode(bottone, INPUT); 

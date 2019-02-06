@@ -8,12 +8,12 @@ int i = 1;
 
 void setup() {
   //Istanzia la variabile servoMotor assegnando il pin nelle parentesi (in questo caso il pin 3) e
-  //dopo la virgola la volecita iniziale.
+  //dopo la virgola la velocità iniziale.
   servoMotore = new ServoMotore(3, i);
 }
 
 void loop() {
-  //Verifica se il servo motore si trova a una posizione uguale o supriore di 180 gradi, se si entra nell'if.
+  //Verifica se il servo motore si trova a una posizione uguale o superiore di 180 gradi, se si entra nell'if.
   if(servoMotore->ottieniPosizione() >= 180){
     //Incrementa la velocità.
     i++;

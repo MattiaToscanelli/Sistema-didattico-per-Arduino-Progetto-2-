@@ -19,14 +19,14 @@ Ultrasuoni::Ultrasuoni(int echo, int trig)
 * Metodo che restituisce la distanza in centimetri letta dal sensore.
 * @return Il valore letto dal sensore ultrasuoni.
 */
-int Ultrasuoni::distanza()
+int Ultrasuoni::distanzaLetta()
 {
 	digitalWrite(_trig, LOW);
 	delayMicroseconds(2);
 	digitalWrite(_trig, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(_trig, LOW);
-	long duration = pulseIn(_echo, HIGH);
-	return (duration * 0.034 / 2);
+	long durata = pulseIn(_echo, HIGH);
+	return (durata * 0.034 / 2);
 
 }

@@ -3,8 +3,9 @@
 
 /**
 * Metodo costruttore che setta il pin di lettura del valore
-* del potenziometro.
-* @param Il pin di lettura a cui il potenziometro è collegato;
+* del potenziometro in base ai pin analogici di Digispark.
+* (P2 = 1, P3 = 3, P4 = 2, P5 = 0)
+* @param pin Il pin di lettura a cui il potenziometro è collegato;
 */
 Potenziometro::Potenziometro(int pin)
 {
